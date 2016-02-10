@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="da46bb4f-4bc1-46d4-a531-81d38c0d11cf" name="SoftkhaPOSLibClasses" linkedPackageId="97636b75-0a90-4d83-b89e-ede015b7525d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ad995da-8ce3-48be-ae2a-199caaf98cfc" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b2822020-973b-4b1c-aedc-93e6989a891a" />
+        <ownedAttributesInternal>
+          <property Id="b81671b1-e269-4cf2-91f4-0732640a1724" name="ProductID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ab9bf4d-f7d1-4d7a-b1f0-ac3ff3329b6c" />
+          </property>
+          <property Id="1cddeee3-b3e7-4b7c-b5ea-fd7ecf8fe27f" name="ProductName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f3bb1f1-e103-405f-b049-683ce65e55f9" />
+          </property>
+          <property Id="045330e6-fbcc-4640-93c1-f333a52861b8" name="ProductSalePrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c80f0f6d-c35a-4707-8a36-7c069578424e" />
+          </property>
+          <property Id="17135bed-f244-4c5b-9b7c-6e8d0045cf1d" name="ProductBuyPrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="97e2ab40-e028-40b4-aea0-c81ff647fa58" />
+          </property>
+          <property Id="f029117f-67b9-4db4-9bf0-9d4234ae6122" name="ProductDescription" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8017245a-b791-4031-8844-622d0091f8ee" />
+          </property>
+          <property Id="40d6a28a-d575-4302-90ce-98fe03935ab3" name="DiscountPrice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f9432716-5033-4a57-b732-788491b3461e" />
+          </property>
+          <property Id="1c344bd5-a729-4780-a4a1-de0e1016cd91" name="ProductQuantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="846f44d5-c12e-475f-b6d7-455a4fcf21b9" />
+          </property>
+          <property Id="7e93f162-1067-49ed-abd3-b28139d02144" name="isDiscounted" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="afb50584-34e5-4fb4-816e-106f217de6e7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0670ce6a-7c73-407e-8c16-a67766f97786" name="renameProduct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3fdc7a48-3da9-438e-9d86-85526962a96c" />
+          </operation>
+          <operation Id="cffa0b33-114e-4e6b-8f6c-12c2e6267b04" name="addDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dfd1227b-bc0b-4a45-976f-e9c2f47fbfbc" />
+          </operation>
+          <operation Id="e05ecb91-519f-4d87-8ccd-a813a4cfcf1e" name="removeDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f79f301-9c8d-4663-9372-d8f87be86c0d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9979947c-574e-4743-be80-3e9da0a2bd32" name="Stock" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8116a6d4-7863-4ad2-87a4-ec2381b074bf" />
+        <ownedAttributesInternal>
+          <property Id="f68d9d3d-4b6a-47a4-851e-637982b32147" name="Products[]" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ffe41c14-9835-4272-9b57-1b6e23adee28" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="649f3fa4-c3ef-4b3c-b52c-14bcfb51f802" name="restock" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51ba2731-43af-4c41-a38f-32a7cf72c6da" />
+          </operation>
+          <operation Id="bf9b4277-3c88-498f-ac88-fddebd9f24a1" name="sellStock" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="39dca18c-4cdd-4380-8949-3e2a35047ef1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4525347-52c7-4e8b-81dd-6ce8361ad37b" name="Transaction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c33f27a2-d117-4e65-87ec-724ed53ae8c8" />
+        <ownedAttributesInternal>
+          <property Id="4b75bbd1-1157-4292-a2f7-6ff31d95b1f3" name="PurchasedProduct" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ee65563c-0c07-4565-86a3-4235ff7c93dd" />
+          </property>
+          <property Id="e56d638d-0122-4e69-b3b7-12b412b004c7" name="ProductQuantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff758ce7-be40-412d-aab8-795d61a1968b" />
+          </property>
+          <property Id="91df0f3f-df40-495d-b014-c0e4140403cf" name="SaleDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4967d3e1-01cb-4ca2-8c01-04a35796f1f9" />
+          </property>
+          <property Id="c52d45e9-7ffd-4443-9e31-5a967af17308" name="ExclusiveDiscount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89ef3ee7-889e-4d6e-ad0c-88feefcc23fa" />
+          </property>
+          <property Id="ab5f2477-3177-46f3-b3b5-73473f388fa9" name="TransactionId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93caa010-7e78-432e-81a8-eff9778a7a23" />
+          </property>
+          <property Id="c087e64a-23b9-45d3-8ffa-def5ac212f6a" name="Tax" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94bab759-3ebc-49f0-8d07-7158433ace37" />
+          </property>
+          <property Id="57b1d742-3115-428f-8fa7-de2e0b339e08" name="TotalSale" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eeaa68ee-b308-4565-8ab2-b1b2c11dbf18" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="db41ac85-2098-46e5-8c5b-b043c634e592" name="calculateCost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11880474-897e-484a-a460-cf968be27ce5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="26535fc8-6f3b-4f1d-93e3-da2a6b086e28" name="TransactionHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6750ea9-4c88-4abd-bb6a-0782aed7f3d8" />
+        <ownedOperationsInternal>
+          <operation Id="e8365d94-537a-4a2e-af25-8613c0e0bb01" name="processTransaction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="13d0a36b-d537-4350-b712-9bd3ee7f174d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="58dacc89-02cf-4420-b572-15309901979f" name="Logging" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6f569b7-7ee3-4a67-a7c5-27129a479a08" />
+        <ownedOperationsInternal>
+          <operation Id="f4f0222b-dbe3-4f3a-b9b0-c75a7bd5ec0f" name="recordTransaction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc2ea36a-d622-461b-89b4-41cdba09ab16" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a0c6d460-8d29-4305-ac3a-6af7cb36c5cc" name="Employee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="98a4da15-7bc6-48ca-84ca-5821559dbec3" />
+        <ownedAttributesInternal>
+          <property Id="c6c2ff14-0dca-443f-b470-98eef32e5f09" name="EmployeeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12f86ecf-8acf-4669-a9e7-3a603baf866c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c5315d2-312a-44a3-93b2-a2f40ce6d27c" name="InventoryForm" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="14ed3254-dab6-46f3-8585-41db4c69434d" />
+        <ownedOperationsInternal>
+          <operation Id="19949147-2ffb-4a2f-8608-1651f9b3bc84" name="displayInventory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="857ef207-15b7-44c9-99c8-a8c10527bf13" />
+          </operation>
+          <operation Id="210002d9-0258-46b9-a0c2-2aa9b9d639a5" name="displayCost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5e285fed-62bb-40f2-a836-c54d8372669a" />
+          </operation>
+          <operation Id="58418a5f-e4fd-4141-80f0-feb938ac096c" name="displayDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4164acdd-2545-4074-97a3-fc9400aaffdb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39c86d2d-5542-4265-ac92-b96d3d126984" name="InventoryControl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b8667430-3772-49dc-a4c5-5c9df7963cd4" />
+        <ownedOperationsInternal>
+          <operation Id="bac4448b-fa5e-4413-9d26-12f6c248f07f" name="inputStock" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="30ce5201-4e02-48ce-9b64-37afa082b26b" />
+          </operation>
+          <operation Id="99f525e0-2ee0-4206-9c27-dce2f55ad029" name="addTransactionGroup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b8d36a11-2d91-4ab3-a43e-090997fd5601" />
+          </operation>
+          <operation Id="909fd6be-209a-48d2-ae1c-f9bddabda910" name="endTransactionGroup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a15f178-6242-4adb-9079-d47a1e20100f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="97636b75-0a90-4d83-b89e-ede015b7525d" name="SofkhaPOSModel">
+    <elementDefinition Id="2ee800c5-eb05-4cb0-b858-f43181713159" />
+    <profileInstances>
+      <packageHasProfileInstances Id="179415f3-a603-4c7c-b33e-fa86a0a4e965">
+        <profileInstance Id="d20e4ac6-7f6f-47f1-8016-bfdb8102f452" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="42e50632-099f-4922-aff1-61f812832d02">
+        <profileInstance Id="2c36b8c4-7a25-4b1d-a8e9-94ad1998824f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sofka_Application", "Sofka_Application\Sofka_Application.csproj", "{9BD923A6-EE4D-457E-8B81-409D329DABC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C01A86E-D488-4F1A-BAC9-F4908F387D17} = {5C01A86E-D488-4F1A-BAC9-F4908F387D17}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SofkhaPOSLib", "SofkaPOSLib\SofkhaPOSLib.csproj", "{5C01A86E-D488-4F1A-BAC9-F4908F387D17}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SofkhaPOSModel", "SofkhaPOSModel\SofkhaPOSModel.modelproj", "{8296B5C6-A8BE-488E-B177-367E6595BAD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sofkha_Testing", "Sofkha_Testing\Sofkha_Testing.csproj", "{53FA0697-06C1-41FA-A681-4504D098F935}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C01A86E-D488-4F1A-BAC9-F4908F387D17} = {5C01A86E-D488-4F1A-BAC9-F4908F387D17}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BD923A6-EE4D-457E-8B81-409D329DABC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD923A6-EE4D-457E-8B81-409D329DABC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD923A6-EE4D-457E-8B81-409D329DABC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD923A6-EE4D-457E-8B81-409D329DABC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C01A86E-D488-4F1A-BAC9-F4908F387D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C01A86E-D488-4F1A-BAC9-F4908F387D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C01A86E-D488-4F1A-BAC9-F4908F387D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C01A86E-D488-4F1A-BAC9-F4908F387D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8296B5C6-A8BE-488E-B177-367E6595BAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8296B5C6-A8BE-488E-B177-367E6595BAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8296B5C6-A8BE-488E-B177-367E6595BAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8296B5C6-A8BE-488E-B177-367E6595BAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FA0697-06C1-41FA-A681-4504D098F935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FA0697-06C1-41FA-A681-4504D098F935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FA0697-06C1-41FA-A681-4504D098F935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FA0697-06C1-41FA-A681-4504D098F935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
